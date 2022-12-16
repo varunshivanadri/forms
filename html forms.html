@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            text-align:center;
+        }
+        h1
+        {
+            margin:25px 0px 0px 0px;
+            color:red;
+            font-style:oblique
+        }
+        h2
+        {
+            color:green;
+            font-style:italic;
+        }
+        h3
+        {
+         color: bule;
+        }
+        label
+        {
+            color:rgb(233,210,0);
+        }
+    </style>
+</head>
+<body>
+    <center><h1> Please choose a course you want to join from YHills</h1>
+    <form action="thankyou.html" method="get">
+        <h2> COURSE OFFERD AT YHills</h2>
+        <label for="FSWD">FULLSTACK:</label>
+        <input id="FSWD" type="radio" name="loc" value="FULL STACK">
+
+        <label for="DS">FULLSTACK:</label>
+        <input id="DS" type="radio" name="loc" value="DATA SCIENCE">
+
+        <label for="DM">FULLSTACK:</label>
+        <input id="DM" type="radio" name="loc" value="DIGITAL MARKETING">
+
+        <h3>
+            please provide rating to our course
+        </h3>
+        <select name="RATING">
+            <option value="GREATE">Gr8</option>
+            <option value="GOOD">Gud</option>
+            <option value="AVERAGE">Avg</option>
+            <option value="SATISFACTORY">Sat</option>
+        </select>
+
+        <h3>  ANY OTHER FEEDBACK</h3>
+        <textarea name="your feedback" rows="10" cols="100"></textarea>
+        <br>
+
+        <input type="submit" name="" value="SUBMIT" onclick="va()">
+        <script>
+          function va()
+          {
+             alert(" thank you for registering into full stack web dev course @YHills !")
+          }
+        </script>    
+    </form>
+</center>
+</body>
+</html>
